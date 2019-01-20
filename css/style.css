@@ -1,0 +1,13 @@
+.menu li {
+    list-style-type: none;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog-item img {
+    width: 180px;
+    height: 250px;
+}
