@@ -2,8 +2,31 @@ body {
     background-color: #f8f8f8;
 }
 
+
+/*
++1.2) Задать блоку с классом header значение высоты;
++1.4) Из вертикального меню сделать горизонтальное;
++1.5) Разместить меню справа от логотипа;
++1.6) Прижать меню к правому краю.
+*/
 .header {
     display: flex;
+    height: 120px;
+    justify-content: space-between;
+}
+
+/*
+1.1) Создать родительский блок с классом container, задать значение ширины и расположить блок по центру экрана;
+*/
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+/*
++1.3) Отодвинуть логотип от левого края;
+*/
+.logo {
+    margin-left: 10px;
 }
 
 /*
@@ -19,6 +42,43 @@ body {
     text-decoration: none;
 }
 
+
+/*
+2) Footer (на всех страницах):
+2.1) Задать высоту;
+2.2) Поменять цвет фона;
+*/
+.footer {
+    height: 120px;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*
+2.3) Прижать текст «Все права защищены» к правому краю и отодвинуть от верхней и правой границы.
+*/
+.allright {
+    margin-top: 50px;
+    margin-right: 750px;
+}
+
+.button-buy {
+    width: 100px;
+    height: 30px;
+}
+
+/*
+3.2) Добавить кнопку «Купить»;
+3.3) Присвоить наведение и нажатие на кнопку «Купить».
+*/
+.button-buy:hover {
+    background-color: limegreen;
+}
+
+.button-buy:active {
+    background-color: red;
+}
 
 /*
 * Для всех ссылок меню задать определенный стиль (цвет текста, размер шрифта, начертание шрифта и т.д.).
@@ -56,6 +116,8 @@ body {
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
+    float: right;
+    margin-right: 400px;    
 }
 
 .full-description {
