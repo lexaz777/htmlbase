@@ -2,6 +2,9 @@ body {
     background-color: #f8f8f8;
 }
 
+.header {
+    display: flex;
+}
 
 /*
  Убрать маркеры списка.
@@ -25,6 +28,10 @@ body {
     color: green;
     font-size: 14px;
     font-family: sans-serif;
+}
+
+.menu a:hover {
+    color: purple;
 }
 
 .catalog {
@@ -75,10 +82,51 @@ body {
     height: 18px;
     color: green;
     font-family: sans-serif;
+    text-transform: capitalize;
 }
 
+/*
+Подсветка поля email
+*/
+[type="email"]:focus {
+    color: red;
+    background-color: bisque;
+}
+
+/*
+Рамка вокруг изображения
+*/
 .bordered-image {
-    border-width: 2px;
-    border-color: black;
-    border-style: solid;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 1px;
+}
+
+/*
+При наведении рамка вокруг изображения исчезает, изображение не смещается
+*/
+.bordered-image:hover {
+    outline-width: 0px;
+}
+
+/*
+Краткая разметка таблицы
+*/
+.table_product_decr {
+    border-collapse : collapse;
+}
+
+.table_product_decr td {
+    border: 1px solid #000;
+    width: 50px;
+    height: 50px;    
+}
+
+/*
+8) *На странице просмотра товара каталога в каждом параграфе выделить первую букву первого слова другим шрифтом и размером.
+*/
+.product-description-container p:first-letter {
+    font-size: 20px;
+    font-style: italic;
+    color: red;
 }
